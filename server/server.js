@@ -17,6 +17,7 @@ app.use(cors({
   credentials:true,
   allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'],
 }));
+// Getting preflight cors error need to fix it 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 main()
