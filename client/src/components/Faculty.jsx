@@ -67,11 +67,15 @@ const Faculty = () => {
             transition={{ duration: 0.8 }}
           >
             <img
-              src="https://res.cloudinary.com/ds8oawwu2/image/upload/v1726138307/WhatsApp_Image_2024-09-06_at_19.32.08_guwfma.jpg"
+              src="https://res.cloudinary.com/df9us90ur/image/upload/v1729422372/ShiwaniGupta.jpg"
               alt="Profile picture"
               className="object-cover w-full h-full rounded-2xl"
             />
           </motion.div>
+          {/* https://res.cloudinary.com/ds8oawwu2/image/upload/v1726138307/WhatsApp_Image_2024-09-06_at_19.32.08_guwfma.jpg
+           
+           https://shorturl.at/05KIo
+           */}
           <motion.div
             className="w-full md:w-2/3 pl-0 p-6 sm:p-6 md:p-8 flex flex-col justify-between"
             ref={textRef1}
@@ -129,7 +133,7 @@ const Faculty = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <img
-              src="https://shorturl.at/05KIo"
+              src="https://res.cloudinary.com/df9us90ur/image/upload/v1729422373/PranjaliSankhe.jpg"
               alt="Profile picture"
               className="object-cover w-full h-full rounded-2xl"
             />
