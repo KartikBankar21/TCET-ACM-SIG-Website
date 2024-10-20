@@ -15,6 +15,7 @@ app.use(cors({
   origin:["https://tcet-acm-sig-website.vercel.app/"],
   methods:["POST","GET"],
   credentials:true,
+  allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'],
 }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
