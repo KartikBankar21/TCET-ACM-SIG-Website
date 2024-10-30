@@ -9,6 +9,7 @@ const Eventpost = () => {
     loading,
     error,
   } = useFetch(import.meta.env.VITE_BACKEND_URL+"/events"); // Adjust the URL if needed
+  {console.log(import.meta.env.VITE_BACKEND_URL+"/events");}
   if (loading) return <div className="text-center py-8">Loading...</div>;
   if (error)
     return (
