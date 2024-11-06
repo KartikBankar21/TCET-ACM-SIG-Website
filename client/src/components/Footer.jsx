@@ -100,9 +100,7 @@ const Footer = () => {
             Facebook
           </span>
           <br />
-          <span id="abt">
-            Dribble
-          </span>
+          
         </div>
       </div>
     </footer>

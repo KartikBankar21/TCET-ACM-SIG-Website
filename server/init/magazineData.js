@@ -2,7 +2,7 @@ const sampleMagazines = [
   {
     title: "Tejas Vol 4.1",
     smallDescription: "We proudly present AI tools, frameworks, and insights redefining the future!",
-    bookLink: "https://online.pubhtml5.com/khico/asvn/",
+    bookLink: "https://online.pubhtml5.com/eqdgd/rjrs/",
     image: {
       fileName: "TejadVol41.jpg",
       url: "https://res.cloudinary.com/df9us90ur/image/upload/v1729399795/TejasVol4.1.jpg",

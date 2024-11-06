@@ -1,5 +1,148 @@
 const sampleEvents = [
   {
+    title: "Zephyr 2024",
+    smallDescription:
+      "Get ready for 3 days of non-stop fun, epic games, and amazing prizes! Whether you're solving puzzles, cracking codes, or battling it out in the arena, there’s something for everyone!",
+    date: "3rd-5th October 2024",
+    optionDate: 2023,
+    image: {
+      fileName: "zephyr_2024.jpg",
+      url: "https://res.cloudinary.com/df9us90ur/image/upload/v1730819598/Zephyr2024.png",
+    },
+    largeImage: {
+      fileName: "zephyr_2024_large.jpg",
+      url: "https://res.cloudinary.com/df9us90ur/image/upload/v1730825567/Zephyr2024largeimage.jpg",
+    },
+    detailInfo: [
+      {
+        title: "Event Overview",
+        paragraph:
+          "Zephyr 2024 is a thrilling 3-day event packed with fun games, challenges, and amazing prizes. Whether you're a fan of puzzles, coding, or intense gaming battles, this event offers something for everyone. Join us for an unforgettable experience!",
+        sequence: 1,
+      },
+      {
+        title: "Featured Events",
+        paragraph:
+          "The event lineup includes exciting activities such as Mystery Maze, Minute to Win It, Console Clash, Free Fire, and Code Sprint. Each activity is designed to test participants' skills, speed, and strategy.",
+        sequence: 2,
+      },
+      {
+        title: "Code Sprint Challenge",
+        paragraph:
+          "Think you can out-code the competition? The Code Sprint is the ultimate test of skill and speed, featuring a thrilling Wikipedia search quest, problem statement crafting, and intense coding rounds. This challenge will push your programming abilities to the edge!",
+        sequence: 3,
+      },
+    ],
+  }
+  ,
+  {
+    title: "Seminar on Prompt Engineering and RAG Technology",
+    smallDescription:
+      "On 30th September 2024, the Department of Artificial Intelligence and Machine Learning at TCET organized an insightful seminar on 'Prompt Engineering and RAG Technology,' led by Mr. Surajkumar Singh from LTI Mindtree. The seminar aimed to introduce students to cutting-edge AI concepts and industry applications.",
+    date: "30th September 2024",
+    optionDate: 2023,
+    image: {
+      fileName: "prompt_engineering_seminar.jpg",
+      url: "https://res.cloudinary.com/df9us90ur/image/upload/v1730825770/RAGeventimage.jpg",
+    },
+    largeImage: {
+      fileName: "prompt_engineering_seminar_large.jpg",
+      url: "https://res.cloudinary.com/df9us90ur/image/upload/v1730825770/RAGeventimage.jpg",
+    },
+    detailInfo: [
+      {
+        title: "Event Overview",
+        paragraph:
+          "On 30th September 2024, TCET's Department of AI&ML hosted a seminar on 'Prompt Engineering and RAG Technology.' Led by Mr. Surajkumar Singh from LTI Mindtree, the session introduced students to the fundamentals of Prompt Engineering and Retrieval-Augmented Generation (RAG), offering insights into their growing importance in AI.",
+        sequence: 1,
+      },
+      {
+        title: "Session Highlights",
+        paragraph:
+          "Mr. Surajkumar Singh provided a comprehensive overview of prompt engineering and explained its applications in AI. The seminar covered the integration of RAG technology and discussed its relevance in various industries, helping students understand how these technologies are applied in real-world scenarios.",
+        sequence: 2,
+      },
+      {
+        title: "Interactive Q&A and Industry Applications",
+        paragraph:
+          "The session concluded with an interactive Q&A, where students engaged actively, asking questions about the practical applications of these AI technologies. The seminar encouraged third-year students to explore AI further and pursue hands-on projects in this innovative field.",
+        sequence: 3,
+      },
+    ],
+  }
+  ,
+  {
+    title: "Seminar on Cloud Computing and Microservices",
+    smallDescription:
+      "On 25th September 2024, the Department of AI&ML at TCET organized a session on 'Deployment on Cloud Computing and Microservices,' led by Mr. Raj Gupta from Vervali Systems.",
+    date: "25th September 2024",
+    optionDate: 2023,
+    image: {
+      fileName: "cloud_microservices_seminar.jpg",
+      url: "https://res.cloudinary.com/df9us90ur/image/upload/v1730825926/CloudComputingsmallimage.jpg",
+    },
+    largeImage: {
+      fileName: "cloud_microservices_seminar.jpg",
+      url: "https://res.cloudinary.com/df9us90ur/image/upload/v1730825976/CloudComputingbigimage.jpg",
+    },
+    detailInfo: [
+      {
+        title: "Event Overview",
+        paragraph:
+          "This seminar introduced final-year AI & ML students to essential concepts in cloud computing and microservices. Led by industry expert Mr. Raj Gupta, the session highlighted key deployment techniques and agile development practices.",
+        sequence: 1,
+      },
+      {
+        title: "Key Topics Discussed",
+        paragraph:
+          "The seminar covered cloud deployment basics, focusing on scalability and efficiency, along with the structure and benefits of microservices for flexible software development.",
+        sequence: 2,
+      },
+      {
+        title: "Interactive Q&A and Real-World Applications",
+        paragraph:
+          "An interactive Q&A allowed students to explore practical applications of cloud and microservices, connecting theoretical insights to real-world scenarios.",
+        sequence: 3,
+      },
+    ],
+  }
+  ,
+  {
+    title: "Empowering Tomorrow’s Developers: Full Stack Development Seminar Recap",
+    smallDescription:
+      "On 27th September 2024, TCET ACM SIGAI hosted an insightful session on Full Stack Development for Industry and Marketing, led by Mr. Ankur Singh, Software Engineer at Red Hat and proud alum of TCET.",
+    date: "27th September 2024",
+    optionDate: 2023,
+    image: {
+      fileName: "full_stack_seminar.jpg",
+      url: "https://res.cloudinary.com/df9us90ur/image/upload/v1730826114/FullStacksmallimage.jpg",
+    },
+    largeImage: {
+      fileName: "full_stack_seminar.jpg",
+      url: "https://res.cloudinary.com/df9us90ur/image/upload/v1730826151/FullStackBigImage.jpg",
+    },
+    detailInfo: [
+      {
+        title: "Event Overview",
+        paragraph:
+          "On 27th September 2024, TCET ACM SIGAI successfully organized a seminar focused on Full Stack Development, providing students with insights into industry practices and skills essential for aspiring developers. The session was led by Mr. Ankur Singh, a Software Engineer at Red Hat and a proud TCET alumnus, who brought his professional experience to bridge the gap between theoretical knowledge and practical application. Attendees had the unique opportunity to learn directly from an industry expert, gaining a deeper understanding of the competencies required to succeed in today's tech-driven landscape.",
+        sequence: 1,
+      },
+      {
+        title: "Key Topics Discussed",
+        paragraph:
+          "The seminar offered an in-depth look into key technologies for full stack development. Mr. Singh explored popular front-end frameworks such as React, Angular, and Vue.js, explaining their applications and advantages in creating interactive, user-friendly interfaces. On the back-end, he covered robust frameworks like Spring Boot, Django, and Nest.js, emphasizing their role in building scalable and secure server-side applications. This comprehensive coverage gave participants a strong foundation in the core technologies that drive modern web development.",
+        sequence: 2,
+      },
+      {
+        title: "Best Practices and Industry Tools",
+        paragraph:
+          "A highlight of the session was the emphasis on best practices for handling different types of databases. Mr. Singh discussed both SQL and NoSQL database management, sharing practical advice on when and how to use each type for optimal data handling. Additionally, he introduced participants to essential development tools like Continuous Integration/Continuous Deployment (CI/CD) pipelines, which streamline and automate testing and deployment processes. The session also included an overview of containerization with Docker, a tool crucial for modern software development due to its ability to ensure consistency across development, testing, and production environments.",
+        sequence: 3,
+      },
+    ],
+  },
+  {
     title: "AI Awareness Session",
     smallDescription:
       "Thakur College of Engineering & Technology's AI&ML Department, in collaboration with ACM SIGAI and the Super-AI Club, hosted an AI Awareness Session at Thakur Public School. Engaging 7th and 8th graders, the event introduced young minds to AI, sparking curiosity and a passion for tech. A big thank you to Dr. Shiwani Gupta and the entire team for a successful event!",
@@ -147,11 +290,11 @@ const sampleEvents = [
     optionDate: 2023,
     image: {
       fileName: "zephyr2023.jpg",
-      url: "https://www.acmsigai.tcetmumbai.in/Images_Events/4.1.jpg",
+      url: "https://res.cloudinary.com/df9us90ur/image/upload/v1730826974/NationalLevelExpertTalksmallimage.png",
     },
     largeImage: {
       fileName: "zephyr2023.jpg",
-      url: "https://www.acmsigai.tcetmumbai.in/Images_Events/4.1.jpg",
+      url: "https://res.cloudinary.com/df9us90ur/image/upload/v1730818952/NationalLevelExpertTalk.jpg",
     },
     detailInfo: [
       {
@@ -182,11 +325,11 @@ const sampleEvents = [
     optionDate: 2023,
     image: {
       fileName: "zephyr2023.jpg",
-      url: "https://www.acmsigai.tcetmumbai.in/Images_Events/6.1.jpg",
+      url: "https://res.cloudinary.com/df9us90ur/image/upload/v1730819018/SeminarOnHigherStudies.jpg",
     },
     largeImage: {
       fileName: "zephyr2023.jpg",
-      url: "https://www.acmsigai.tcetmumbai.in/Images_Events/6.1.jpg",
+      url: "https://res.cloudinary.com/df9us90ur/image/upload/v1730819018/SeminarOnHigherStudies.jpg",
     },
     detailInfo: [
       {
@@ -217,11 +360,11 @@ const sampleEvents = [
     optionDate: 2023,
     image: {
       fileName: "zephyr2023.jpg",
-      url: "https://www.acmsigai.tcetmumbai.in/Images_Events/1.1.jpg",
+      url: "https://res.cloudinary.com/df9us90ur/image/upload/v1730818865/NationalLevelCodingCompetition2023.jpg",
     },
     largeImage: {
       fileName: "zephyr2023.jpg",
-      url: "https://www.acmsigai.tcetmumbai.in/Images_Events/1.1.jpg",
+      url: "https://res.cloudinary.com/df9us90ur/image/upload/v1730818865/NationalLevelCodingCompetition2023.jpg",
     },
     detailInfo: [
       {

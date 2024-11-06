@@ -48,28 +48,28 @@ const AboutUs = () => {
           debates, Kaggle competitions, etc.
         </motion.div>
         <div className="content_about_us_right appearanimation">
-          <motion.div style={{ display: "flex" }}
+          <motion.div style={{ display: "flex", alignItems:'center' }}
           initial={{ opacity: 0, x: 10 }}
           animate={{ opacity: headerInView ? 1 : 0, x: headerInView ? 0 : 100 }}
           transition={{ duration: 0.5 }}>
-            <p id="content_about_us_right_h1">50+</p>
-            <p id="events">Number of events</p>
+            <p className="content_about_us_right_h1">50+</p>
+            <p className="aboutusrighttext">Number of events</p>
           </motion.div>
           <hr style={{ border: "1px solid #232270", marginTop: "0" }} />
-          <motion.div style={{ display: "flex" }}
+          <motion.div style={{ display: "flex", alignItems:'center' }}
           initial={{ opacity: 0, x: 10 }}
           animate={{ opacity: headerInView ? 1 : 0, x: headerInView ? 0 : 100 }}
           transition={{ duration: 0.5, delay:0.2 }}>
-            <p id="content_about_us_right_h1">100+</p>
-            <p id="events">Members</p>
+            <p className="content_about_us_right_h1">100+</p>
+            <p className="aboutusrighttext">Members</p>
           </motion.div>
           <hr style={{ border: "1px solid #232270", marginTop: "0" }} />
-          <motion.div style={{ display: "flex" }}
+          <motion.div style={{ display: "flex", alignItems:'center' }}
           initial={{ opacity: 0, x: 10 }}
           animate={{ opacity: headerInView ? 1 : 0, x: headerInView ? 0 : 100 }}
           transition={{ duration: 0.5,delay:0.4 }}>
-            <p id="content_about_us_right_h1">30%</p>
-            <p id="events">Growth per year</p>
+            <p className="content_about_us_right_h1">30%</p>
+            <p className="aboutusrighttext">Growth per year</p>
           </motion.div>
           <hr style={{ border: "1px solid #232270", marginTop: "0" }} />
         </div>

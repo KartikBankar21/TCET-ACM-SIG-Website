@@ -12,11 +12,14 @@ const port = process.env.PORT || 8080;
 
 app.use(express.json())
 app.use(cors({
-  origin:[process.env.FRONTEND_URL],
-  methods:["POST","GET"],
+  origin:'*',
+  methods:["GET",
+    "POST"],
   credentials:true,
   allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'],
+  preflightContinue: true,
 }));
+app.options('*',cors());
 // Getting preflight cors error need to fix it 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -32,15 +35,18 @@ async function main() {
   await mongoose.connect(db_url);
 }
 
+// app.use(express.static('dist'));
+
 app.get("/",(req,res)=>{
-  res.json("Hello");
+  res.json('Hello World testing');
 });
 
-app.get("/test",(req,res)=>{
-  res.json("Hello testing route");
-});
+// Testing route
+// app.get("/test",(req,res)=>{
+//   res.json("Hello testing route");
+// });
 
-app.get("/events", async (req, res) => {
+app.get("/api/events", async (req, res) => {
   try {
     let eventArray = await Event.find({ optionDate: 2023 });
     res.json(eventArray);
@@ -50,7 +56,7 @@ app.get("/events", async (req, res) => {
   }
 });
 
-app.post("/magazine", async(req,res)=>{
+app.post("/api/magazine", async(req,res)=>{
   try{
   // console.log("put request call");
   // console.log(req.params);
@@ -67,7 +73,7 @@ app.post("/magazine", async(req,res)=>{
   }
 })
 
-app.get("/events/:id", async (req, res) => {
+app.get("/api/events/:id", async (req, res) => {
   try {
     const event = await Event.findById(req.params.id);
     if (!event) {
@@ -84,7 +90,7 @@ app.get("/events/:id", async (req, res) => {
   }
 });
 
-app.get("/publication", async (req, res) => {
+app.get("/api/publication", async (req, res) => {
   try {
     let magazineArray = await Magazine.find({optionDate:2023});
     // console.log(magazineArray);
@@ -95,7 +101,7 @@ app.get("/publication", async (req, res) => {
   }
 });
 
-app.get("/latestpublication", async (req, res) => {
+app.get("/api/latestpublication", async (req, res) => {
   try {
     let magazineArray = await Magazine.find({latest:'yes'});
     // console.log(magazineArray);

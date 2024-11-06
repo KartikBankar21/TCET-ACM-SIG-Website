@@ -28,21 +28,21 @@ const Team = () => {
           id="meetteam"
         />
         <motion.div
-          className="absolute top-[58%] sm:top-[390px] left-[5%] sm:left-[64px] w-[90%] h-[12rem] sm:h-[250px] bg-white/10 backdrop-blur-md rounded-[40px] flex justify-left flex-col items-start pt-8 sm:pt-4 lg:pt-8"
+          className="absolute bottom-8 sm:bottom-12 md:bottom-16 left-4 sm:left-8 md:left-16 right-4 sm:right-8 md:right-16 bg-black/5 backdrop-blur-md rounded-2xl sm:rounded-3xl md:rounded-[40px] flex justify-center flex-col items-start p-6 sm:p-8 md:p-10"
           initial="hidden"
           animate="visible"
           variants={fadeDownVariants}
           transition={{ duration: 0.9, ease: "easeOut" }}
         >
           <motion.h1
-            className="text-gray-200 text-2xl sm:text-7xl font-inter pl-10 pb-4"
+            className="text-gray-200 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-inter pb-2 sm:pb-4"
             variants={fadeUpVariants}
             transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
           >
             Our Team
           </motion.h1>
           <motion.h1
-            className="text-gray-200 text-2xl sm:text-7xl font-inter pl-10"
+            className="text-gray-200 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-inter"
             variants={fadeUpVariants}
             transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
           >

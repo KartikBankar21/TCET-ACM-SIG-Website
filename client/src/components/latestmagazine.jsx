@@ -11,7 +11,7 @@ const Pubs = () => {
     data: magazines,
     loading,
     error,
-  } = useFetch(import.meta.env.VITE_BACKEND_URL+"/latestpublication"); // Adjust the URL if needed
+  } = useFetch("https://sig-ai-backend-server.vercel.app/api/latestpublication"); // Adjust the URL if needed
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
@@ -31,7 +31,7 @@ const Pubs = () => {
     // console.log("Viewsupdated");
     // console.log(magazineid)
     let id = {id:magazineid,}
-    axios.post(import.meta.env.VITE_BACKEND_URL+"/magazine",id).then((response)=>{
+    axios.post("https://sig-ai-backend-server.vercel.app/api/magazine",id).then((response)=>{
       console.log(response.status, response.data.token);
     })
   };

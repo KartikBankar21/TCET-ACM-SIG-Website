@@ -11,7 +11,7 @@ const Pubs = () => {
     data: magazines,
     loading,
     error,
-  } = useFetch(import.meta.env.VITE_BACKEND_URL+"/publication"); // Adjust the URL if needed
+  } = useFetch("https://sig-ai-backend-server.vercel.app/api/publication"); // Adjust the URL if needed
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
@@ -28,10 +28,10 @@ const Pubs = () => {
   // });
 
   const viewsUpdater =(magazineid)=>{
-    console.log("Viewsupdated");
+    // console.log("Viewsupdated");
     // console.log(magazineid)
     let id = {id:magazineid,}
-    axios.post(import.meta.env.VITE_BACKEND_URL+"/magazine",id).then((response)=>{
+    axios.post("https://sig-ai-backend-server.vercel.app/api/magazine",id).then((response)=>{
       console.log(response.status, response.data.token);
     })
   };
@@ -57,7 +57,7 @@ const Pubs = () => {
             rel="noopener noreferrer"
             className="center-magazine-content"
             onClick={()=>{
-              console.log(magazine._id);
+              // console.log(magazine._id);
               viewsUpdater(magazine);
               // setViews(view+1);
             }}

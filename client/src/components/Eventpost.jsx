@@ -8,7 +8,7 @@ const Eventpost = () => {
     data: events,
     loading,
     error,
-  } = useFetch(import.meta.env.VITE_BACKEND_URL+"/events"); // Adjust the URL if needed
+  } = useFetch("https://sig-ai-backend-server.vercel.app/api/events"); // Adjust the URL if needed
   if (loading) return <div className="text-center py-8">Loading...</div>;
   if (error)
     return (
